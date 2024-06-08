@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Pista para saber que palabra es</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+  <script src="script.js"></script> </head>
 
 </head>
 <body>
@@ -117,7 +118,7 @@
       <div class='planet_description mercury'>
         <h2>Planet</h2>
         <h1>Mercury</h1>
-        <p>The closest planet to the sun. It circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.</p>
+        <p>El planeta más cercano al sol. Gira alrededor del sol más rápido que todos los demás planetas, razón por la cual los romanos lo nombraron en honor a su dios mensajero de pies veloces.</p>
         <label for='readMercury'>
           <a>
             Read Mor
@@ -337,17 +338,60 @@
 <input class='read' id='closeMercury' name='mercuryRead' type='radio'>
 <div class='panel'>
   <h1>Mercury</h1>
-  <p>Mercury is the closest planet to the sun. As such, it circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.</p>
-  <p>The Sumerians also knew of Mercury since at least 5,000 years ago. It was often associated with Nabu, the god of writing. Mercury was also given separate names for its appearance as both a morning star and as an evening star. Greek astronomers knew, however, that the two names referred to the same body, and Heraclitus, around 500 B.C., correctly thought that both Mercury and Venus orbited the sun, not Earth.</p>
-  <img src='https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&amp;ssl=1'>
-  <h2>A year on Mercury is just 88 days long.</h2>
-  <p>One solar day (the time from noon to noon on the planet’s surface) on Mercury lasts the equivalent of 176 Earth days while the sidereal day (the time for 1 rotation in relation to a fixed point) lasts 59 Earth days. Mercury is nearly tidally locked to the Sun and over time this has slowed the rotation of the planet to almost match its orbit around the Sun. Mercury also has the highest orbital eccentricity of all the planets with its distance from the Sun ranging from 46 to 70 million km.</p>
-  <h2>Mercury is the smallest planet in the Solar Systm.</h2>
-  <p>One of five planets visible with the naked eye a, Mercury is just 4,879 Kilometres across its equator, compared with 12,742 Kilometres for the Earth.</p>
-  <h2>Mercury is the second densest planet.</h2>
-  <p>Even though the planet is small, Mercury is very dense. Each cubic centimetre has a density of 5.4 grams, with only the Earth having a higher density. This is largely due to Mercury being composed mainly of heavy metals and rock.</p>
-  <h2>Mercury has wrinkles.</h2>
-  <p>As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.</p>
+  <div class="container">
+        <h1 id="headline">Cuenta atras para tu cumpleaños</h1>
+        <div id="countdown">
+           <ul>
+            <li id="days"><span></span>Dias</li> 
+            <li id="hours"><span></span>Horas</li>
+            <li id="minutes"><span></span>Minutos</li>
+            <li id="seconds"><span></span>Segundos</li>
+          </ul>
+        </div>
+         <div id="content" class="emoji">
+          <span>Te quiero decir que tengas un muy feliz cumpleaños, falta alguna cosita más, pero puede que no este despierto, apenas me despeirte veras todo, que la pases muy bien el dia de hoy.</span>
+          <span>🥳</span>
+          <span>🎉</span>
+          <span>🎂</span>
+        </div>
+      </div>
+    </div>
+    <!-- <p>Debes colocar la palabra, la primera en mayúsculas para que te lleve a un lugar sorpresa.</p>
+    <p>As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.</p>
+    <br>
+    <div id="inputContainer">
+      <input type="text" id="claveInput" placeholder="Ingresa la palabra clave">
+      <button id="verificarBtn">Verificar</button>
+    </div>
+  </div>
+  
+  <div id="panelSecreto" class="fullscreen-panel" style="display: none;">
+    <h2>¡Clave Correcta!</h2>
+    <p>Serás redirigido en unos segundos...</p> 
+  </div>
+  
+  <script>
+    const claveInput = document.getElementById("claveInput");
+    const verificarBtn = document.getElementById("verificarBtn");
+    const panelSecreto = document.getElementById("panelSecreto");
+    const urlSecreta = "https://juanfishp.github.io/Saturnus/"; // Reemplaza con la URL real
+  
+    verificarBtn.addEventListener("click", () => {
+      const clave = claveInput.value;
+      if (clave === "Saturnus") {
+        panelSecreto.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = urlSecreta; // Redirige después de unos segundos
+        }, 2000); // 2000 milisegundos = 2 segundos
+      } else {
+        alert("Clave incorrecta. Inténtalo de nuevo.");
+      }
+    });
+  </script>
+  
+  <style>
+    /* ... (estilos existentes) ... */
+  </style> -->
   <br>
 </div>
 <input class='read' id='readVenus' name='venusRead' type='radio'>

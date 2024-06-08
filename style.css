@@ -2302,3 +2302,52 @@ body .panel p {
   font-size: 12px;
   line-height: 20px;
 }
+.panel {
+  #countdown ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Centra los elementos horizontalmente */
+      align-items: center;   /* Alinea los elementos verticalmente */
+      flex-wrap: nowrap;   /* Evita que los elementos se dividan en varias líneas */
+      gap: 5px;         /* Agrega espacio entre los elementos */ 
+      font-family: 'Dancing Script', cursive;
+  }
+
+  #countdown ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #countdown li { /* Estilos aplicados al <li> */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine; /* Fondo amarillo en el <li> */
+    color: black;
+  }
+
+  #countdown span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    /* Elimina el fondo amarillo del <span> */
+  }
+
+  .emoji {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .emoji span {
+    font-size: 1em;
+    font-family: 'Dancing Script', cursive;
+  }
+}
