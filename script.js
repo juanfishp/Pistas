@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
           hour = minute * 60,
           day = hour * 24;
   
-    const birthday = new Date("June 10, 2024 00:00:00").getTime();
+    const birthday = new Date("June 10, 2025 00:00:00").getTime();
   
     const countDown = setInterval(function () {
       const now = new Date().getTime();
